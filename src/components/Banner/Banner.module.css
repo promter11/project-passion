@@ -1,0 +1,36 @@
+.banner {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-height: 400px;
+  background-blend-mode: darken;
+  color: #fff;
+}
+
+.title {
+  font-family: "Canterbury-Regular";
+  font-size: 144px;
+  margin-bottom: 20px;
+}
+
+.text {
+  max-width: 420px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 62px;
+  }
+
+  .banner {
+    min-height: 320px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .title {
+    font-size: 96px;
+  }
+}

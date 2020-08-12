@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Canterbury-Regular";
+  src: url("./assets/fonts/Canterbury/Canterbury.woff") format("woff"),
+    url("/assets/fonts/Canterbury/Canterbury.eot"),
+    url("/assets/fonts/Canterbury/Canterbury.eot?#iefix")
+      format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+
+  background-color: #efefef;
+}
+
+a {
+  text-decoration: none;
+
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input,
+button {
+  font-family: "Raleway", sans-serif;
+
+  outline: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 15px;
 }

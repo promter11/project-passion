@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.item {
+  width: 50%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+.video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .list {
+    margin: 0;
+  }
+
+  .item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .item:nth-last-child(-n + 2) {
+    margin-bottom: 15px;
+  }
+
+  .item:last-child {
+    margin-bottom: 0;
+  }
+}

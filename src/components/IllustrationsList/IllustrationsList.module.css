@@ -1,0 +1,105 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.item {
+  width: 33.33%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+.block {
+  position: relative;
+  padding-bottom: 75%;
+  cursor: pointer;
+  overflow: hidden;
+  background-blend-mode: darken;
+}
+
+.block:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  transition: all 0.25s ease-in-out;
+  background: url("../../assets/images/icons/search.svg") no-repeat center
+    center / cover;
+}
+
+.block:hover .link {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.block:hover .author {
+  opacity: 1;
+  visibility: visible;
+}
+
+.block:hover::after {
+  opacity: 0;
+}
+
+.link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: translateY(-15px);
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.author {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 14px;
+  padding: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 576px) {
+  .list {
+    margin: 0;
+  }
+
+  .item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .item:nth-last-child(-n + 2) {
+    margin-bottom: 15px;
+  }
+
+  .item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .item {
+    width: 50%;
+  }
+}

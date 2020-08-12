@@ -1,0 +1,2 @@
+export const FETCH_REQUEST_PHOTOS: string = "FETCH_REQUEST_PHOTOS";
+export const FETCH_RECEIVE_PHOTOS: string = "FETCH_RECEIVE_PHOTOS";

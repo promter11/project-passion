@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  padding-top: 20px;
+}
+
+.item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.link {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+}
+
+.link:hover {
+  color: #a90000;
+}
+
+.link.active {
+  background-color: #333;
+  color: #fff;
+}

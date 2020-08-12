@@ -1,0 +1,13 @@
+.photos {
+  padding: 40px 0;
+}
+
+.errorText {
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  .photos {
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,9 @@
+.illustrations {
+  padding: 40px 0;
+}
+
+@media (max-width: 576px) {
+  .illustrations {
+    padding: 20px 0;
+  }
+}

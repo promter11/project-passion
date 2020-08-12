@@ -1,0 +1,1 @@
+export const FETCH_RECEIVE_BANNER: string = "FETCH_RECEIVE_BANNER";
